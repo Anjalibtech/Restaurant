@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>S.D. Restaurant</title>
+  <link href="rest.css" rel="stylesheet">
+  <style>
+   #get, #fix {
+   text-align:center;
+   font-size:50px;
+   color:dodgerblue;
+   font-family: "Lucida Console";
+   }
+  </style>
+ </head>
+ <body>
+  <script type="text/javascript">
+  function myPayment() {
+  var c=document.fr.seat.value;
+  var d=document.fr.time.value;
+  if(c=="Center Seat"&&d=="Lunch")
+  document.getElementById("Pay").innerHTML="Pay Rs. 1500/-"
+  else if(c=="Corner Seat"&&d=="Lunch")
+  document.getElementById("Pay").innerHTML="Pay Rs. 1000/-" 
+  else if(c=="Center Seat"&&d=="Dinner")
+  document.getElementById("Pay").innerHTML="Pay Rs. 1550/-"
+  else if(c=="Corner Seat"&&d=="Dinner")
+  document.getElementById("Pay").innerHTML="Pay Rs. 1050/-"
+  else
+  document.getElementById("Pay").innerHTML="Pay Rs. 970/-"
+  }
+ 
+  function myFunction() {
+  var a=document.fr.fname.value;
+  var b=document.fr.lname.value;
+  document.getElementById("get").innerHTML = "Thanks "+a+" "+b+"!" ;
+  var c=document.fr.date.value;    
+  var d=document.fr.seat.value;
+  var e=document.fr.time.value;
+  document.getElementById("fix").innerHTML="Your "+d+" for "+c+", "+e+" Timings has been booked successfully.";
+  }
+  </script>
+  <nav>
+   <p class="head">
+     <button>
+      <a href="Restaurant.html" target="_blank">Home</a>
+     </button> |
+    | <button>
+       <a href="about.html" target="_blank">About Us</a>
+      </button> |
+    | <span class="dropdown">
+       <button class="menu">
+        <a href="menu2.html" target="_blank">Menu</a>
+       </button>
+       <span class="menu-content">
+        <a href="maincourse.html">Main Course</a><br>
+        <a href="app.html">Appetizers & Snacks</a><br>
+        <a href="dessert.html">Dessert & Beverages</a><br>
+        <a href="raita.html">Raita & Salad</a>
+       </span>
+      </span>| 
+    | <button>
+       <a href="contact.html">Contact Us</a>
+      </button> | 
+    | <button>
+       <a href="reser.html" target="_blank">Reservation</a>
+      </button>
+   </p>
+  </nav>
+  <center>
+   <form name="fr" style="color:red;background-color:slateblue;font-size:30px;">
+    <fieldset>
+      <legend>Book your seat</legend>
+      First Name:
+       <input type="text" size="30" maxlength="10" name="fname"><br><br>
+      Last Name:
+       <input type="text" size="30" maxlength="10" name="lname"><br><br>
+      Choose the day:
+       <input type="date" size="30" name="date"><br><br>
+      Choose your preferred seat:
+       <select name="seat">
+        <option value="Center Seat">Center Seat</option>
+        <option value="Corner Seat">Corner Seat</option>
+        <option value="Seat">Any Seat</option>
+       </select><br><br>
+      Choose a suitable time:
+       <select id="time" name="time">
+        <option value="Breakfast">Breakfast</option>
+        <option value="Lunch">Lunch</option>
+        <option value="Dinner">Dinner</option>
+       </select><br><br>
+      <input type="button" value="Payment" style="color:red;background-color:green;" onclick="myPayment()"><br><br>
+       <p id="Pay"></p>
+      <input type="button" value="Get your seat" style="background-color:red;color:green;" onclick="myFunction()"><br><br>
+    </fieldset>
+   </form>
+  </center>
+   <p id="get"></p>
+   <p id="fix"></p>
+  <div class="contact">
+   <ul>
+    <li>
+     Contact:
+      <ul>
+       <li>xxx-000-xxxx</li>
+       <li>000-xxx-0000</li>
+      </ul>
+    </li>
+    <li>Address:
+     <ul>
+      <li> 1<sup>st</sup>Floor, AKA Road, Meerut, 250002</li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+ </body>
+</html>

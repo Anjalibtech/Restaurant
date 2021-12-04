@@ -1,0 +1,84 @@
+  .head {
+  background-color:green;
+  border-style:solid;
+  border-color:red;
+  color:white;
+  }
+  body {
+  background-color:mintcream;
+  }
+  h1 {
+  font-size:50px;
+  color:green;
+  }
+  center>p {
+  font-size:65px;
+  color:brown;
+  font-family:"Verdana";
+  font-style:italic;
+  font-family:"Brush Script MT";
+  }
+  .contact {
+  background-color:orange;
+  border: 8px solid;
+  padding: 5px;
+  color:crimson;
+  border-image:url("border.jpg") 40 round;
+  font-size:30px;
+  }
+  ul {
+  list-style-type:none;
+  }
+  #res {
+  color:green;
+  font-size:30px;
+  border:8px solid transparent;
+  border-image:url("border1.jpg") 100 round;
+  padding:10px;
+  background-color:red;
+  }
+  #res:hover {
+  color:darkgreen;
+  padding:20px;
+  background-color:darkred;
+  }
+  a:link {
+  color:white;
+  background-color:red;
+  text-decoration: none;
+  }
+  a:visited {
+  color:white;
+  background-color:red;
+  text-decoration: none;
+  }
+  a:hover {
+  color:green;
+  background-color:red;
+  text-decoration: none;
+  }
+  button {
+  background-color: red;
+  color:white;
+  padding: 10px;
+  font-size: 12px;
+  }
+  .menu-content {
+  background-color:green;
+  color:white;
+  display: none;
+  position:absolute;
+  min-width:200px;
+  padding: 12px;
+  }
+  .dropdown:hover .menu-content {
+  display:block;
+  }
+  .menu-content:hover {
+  background-color:red;
+  padding: 14px;
+  text-decoration: none;
+  }
+  .menu-content a:hover {
+  padding: 14px 16px;
+  }
