@@ -1,2 +1,2 @@
-<a href="reser.html">Welcome!</a>
+<a href="rest.html">Welcome!</a>
 
