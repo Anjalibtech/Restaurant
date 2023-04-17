@@ -30,7 +30,7 @@
   }
  
   function myFunction() {
-  var a=document.fr.fname.value;
+  var a=document.getElementById("fname").value;
   var b=document.fr.lname.value;
   document.getElementById("get").innerHTML = "Thanks "+a+" "+b+"!" ;
   var c=document.fr.date.value;    
@@ -71,7 +71,7 @@
     <fieldset>
       <legend>Book your seat</legend>
       First Name:
-       <input type="text" size="30" maxlength="10" name="fname"><br><br>
+       <input type="text" size="30" maxlength="10" id="fname" name="fname"><br><br>
       Last Name:
        <input type="text" size="30" maxlength="10" name="lname"><br><br>
       Choose the day:
